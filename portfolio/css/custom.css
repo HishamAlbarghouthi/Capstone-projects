@@ -1,0 +1,101 @@
+html{
+	scroll-behavior: smooth;
+}
+header{
+
+	background-image: url("1.jpg") ;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-bottom: 200px;
+}
+.nav1{
+	margin-left: 600px;
+}
+.nav2{
+	font-size: 50px;
+}
+.c1{
+	text-align: center;
+	margin-top: 200px;
+}
+.span1{
+	color: #fff;
+}
+.hh,h1{
+	font-size: 70px;
+	font-family: Comic Sans MS;
+}
+h3{
+	font-size: 40px;
+}
+.div1{
+		background-color:  #f2f2f2;
+}
+.s1{
+	color: black;
+	font-weight: bold;
+	font-family: Trebuchet MS;
+	font-size: 20px;
+	margin-right: 130px;
+}
+.s2{
+	color: gray;
+	font-weight: bold;
+	font-family: Trebuchet MS;
+	font-size: 20px;
+}
+.ss{
+	margin-left: -70px;
+}
+.sss{
+	margin-left: -20px;
+}
+.b1{
+	border-radius: 50px;
+}
+.about{
+	display: none;
+}
+.sec1{
+	background-color:   #f2f2f2;
+}
+.ed1{
+	font-family: Lucida Sans Unicode;
+}
+.ed2{
+	background-color:  #cccccc;
+	text-align: center;
+	padding: 20px;
+	margin-top: 50px;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+	background-color:  #1a75ff;
+
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+	color: black;
+  background-color: white;
+  border:1px solid black;
+}
+.footer1{
+	margin-left: 600px;
+	font-size: 40px;
+}

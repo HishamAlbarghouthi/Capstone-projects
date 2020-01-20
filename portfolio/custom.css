@@ -1,0 +1,48 @@
+header{
+	background-image: url("1.jpg") ;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-bottom: 200px;
+}
+.nav1{
+	margin-left: 700px;
+}
+.nav2{
+	font-size: 50px;
+}
+.c1{
+	text-align: center;
+	margin-top: 200px;
+}
+.span1{
+	color: #fff;
+}
+h1{
+	font-size: 70px;
+	font-family: Trebuchet MS;
+}
+h3{
+	font-size: 40px;
+}
+.s1{
+	color: black;
+	font-weight: bold;
+	font-family: Trebuchet MS;
+	font-size: 20px;
+	margin-right: 130px;
+}
+.s2{
+	color: gray;
+	font-weight: bold;
+	font-family: Trebuchet MS;
+	font-size: 20px;
+}
+.ss{
+	margin-left: -70px;
+}
+.sss{
+	margin-left: -20px;
+}
+.b1{
+	border-radius: 50px;
+}
