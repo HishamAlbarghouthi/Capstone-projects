@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/custom.css">
+	<link rel="stylesheet" type="text/css" href="Bootstrap4/bootstrap-4.3.1-dist/css/bootstrap.css">
+</head>
+<body>
+	<h1 class="text-primary mt-5 hh">Question 2</h1>
+<div class="container c1">
+<div class="div1">
+	<p class="p1 font-weight-bold mb-4 pl-3">
+which of the following tag is used to mark a begining of paragraph ?</p>
+</div>
+
+<div class="container">
+	<form name="frm" onsubmit="return sbmt()">
+	<div class="container">
+		<div class="div90">
+			A : &nbsp;&nbsp;<input type="radio" name="question2" value="td">&nbsp;&nbsp;TD<br>
+		</div>
+		<div class="div90">
+			B : &nbsp;&nbsp;<input type="radio" name="question2" value="br">&nbsp;&nbsp;BR<br>
+		</div>
+		<div class="div90">
+			C : &nbsp;&nbsp;<input type="radio" name="question2" value="p">&nbsp;&nbsp;P<br>
+		</div>
+		<div class="div90">
+			D : &nbsp;&nbsp;<input type="radio" name="question2" value="tr">&nbsp;&nbsp;TR<br>
+		</div>
+	</div>
+	<input type="submit" value="Next ->" class="next1" onmouseover ="return css1()" onmouseout="css2()" id="sub1">
+	<input type="button" value="<- Previous" class="next2" onmouseover ="return csss1()" onmouseout="csss2()" id="sub2" onclick="return pre2()">
+	</form>
+</div>
+<script type="text/javascript">
+	function pre2(){
+		window.location.href="q1.html";
+	}
+	function css1(){
+		document.getElementById('sub1').style.backgroundColor="		#DCDCDC";
+		document.getElementById('sub1').style.boxShadow = "2px 2px 0px black";
+	}
+	function css2(){
+		document.getElementById('sub1').style.backgroundColor="#f5f6f9";
+		document.getElementById('sub1').style.boxShadow = "none";
+	}
+	function csss1(){
+		document.getElementById('sub2').style.backgroundColor="		#DCDCDC";
+		document.getElementById('sub2').style.boxShadow = "2px 2px 0px black";
+	}
+	function csss2(){
+		document.getElementById('sub2').style.backgroundColor="#f5f6f9";
+		document.getElementById('sub2').style.boxShadow = "none";
+	}
+	function sbmt(){
+		var form=document.frm;
+		localStorage.setItem("q2","p");
+		var Q2=form.elements["question2"].value;
+		localStorage.setItem("answer2",Q2);
+		var score = parseInt(localStorage.getItem("result1"));
+		if (Q2=="p") {
+			score++;
+		}
+		localStorage.setItem("result1",score);
+		window.location.href="q3.html";
+		return false;
+	}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Resault</title>
+	<link rel="stylesheet" type="text/css" href="css/custom.css">
+	<link rel="stylesheet" type="text/css" href="Bootstrap4/bootstrap-4.3.1-dist/css/bootstrap.css">
+</head>
+<body id="body2">
+	<div class="container con1">
+		<div id="res1" class="mt-5 ">
+			<!-- <p id="rr" class="font-weight-bold">Your Score is :</p> -->
+			<span class="sp1">Your Score is :&nbsp;</span>
+			<span id="rr" class="sp1"></span>
+			<span class="sp1">&nbsp;Of 10</span>
+		</div>
+		<div id="res2"></div>
+		<table border="2px">
+			<tr>
+				<th class="text-center">#</th>
+				<th class="text-center">Your Answer</th>
+				<th class="text-center">Correct Answer</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td id="td1" class="text-white font-weight-bold"></td>
+				<td id="td2"></td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td id="td3" class="text-white font-weight-bold"></td>
+				<td id="td4"></td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td id="td5" class="text-white font-weight-bold"></td>
+				<td id="td6"></td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td id="td7" class="text-white font-weight-bold"></td>
+				<td id="td8"></td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td id="td9" class="text-white font-weight-bold"></td>
+				<td id="td10"></td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td id="td11" class="text-white font-weight-bold"></td>
+				<td id="td12"></td>
+			</tr>
+			<tr>
+				<td>7</td>
+				<td id="td13" class="text-white font-weight-bold"></td>
+				<td id="td14"></td>
+			</tr>
+			<tr>
+				<td>8</td>
+				<td id="td15" class="text-white font-weight-bold"></td>
+				<td id="td16"></td>
+			</tr>
+			<tr>
+				<td>9</td>
+				<td id="td17" class="text-white font-weight-bold"></td>
+				<td id="td18"></td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td id="td19" class="text-white font-weight-bold"></td>
+				<td id="td20"></td>
+			</tr>
+
+		</table>
+	</div>
+	<script type="text/javascript">
+		var a=localStorage.getItem("result1");
+
+		var b=localStorage.getItem("answer1");
+		var c=localStorage.getItem("answer2");
+		var d=localStorage.getItem("answer3");
+		var e=localStorage.getItem("answer4");
+		var f=localStorage.getItem("answer5");
+		var g=localStorage.getItem("answer6");
+		var h=localStorage.getItem("answer7");
+		var i=localStorage.getItem("answer8");
+		var j=localStorage.getItem("answer9");
+		var k=localStorage.getItem("answer10");
+		var l=localStorage.getItem("q1");
+		var m=localStorage.getItem("q2");
+		var n=localStorage.getItem("q3");
+		var o=localStorage.getItem("q4");
+		var p=localStorage.getItem("q5");
+		var q=localStorage.getItem("q6");
+		var r=localStorage.getItem("q7");
+		var s=localStorage.getItem("q8");
+		var t=localStorage.getItem("q9");
+		var u=localStorage.getItem("q10");
+		
+
+		document.getElementById("td1").innerHTML+=b;
+		document.getElementById("td3").innerHTML+=c;
+		document.getElementById("td5").innerHTML+=d;
+		document.getElementById("td7").innerHTML+=e;
+		document.getElementById("td9").innerHTML+=f;
+		document.getElementById("td11").innerHTML+=g;
+		document.getElementById("td13").innerHTML+=h;
+		document.getElementById("td15").innerHTML+=i;
+		document.getElementById("td17").innerHTML+=j;
+		document.getElementById("td19").innerHTML+=k;
+
+		document.getElementById("td2").innerHTML+=l;
+		document.getElementById("td4").innerHTML+=m;
+		document.getElementById("td6").innerHTML+=n;
+		document.getElementById("td8").innerHTML+=o;
+		document.getElementById("td10").innerHTML+=p;
+		document.getElementById("td12").innerHTML+=q;
+		document.getElementById("td14").innerHTML+=r;
+		document.getElementById("td16").innerHTML+=s;
+		document.getElementById("td18").innerHTML+=t;
+		document.getElementById("td20").innerHTML+=u;
+
+		if (b==l) {
+			document.getElementById("td1").style.backgroundColor="green";
+		}
+		else{
+			document.getElementById("td1").style.backgroundColor="red";
+
+		}
+		if (c==m) {
+			document.getElementById("td3").style.backgroundColor="green";
+		}
+		else{
+			document.getElementById("td3").style.backgroundColor="red";
+
+		}
+		if (d==n) {
+			document.getElementById("td5").style.backgroundColor="green";
+		}
+		else{
+			document.getElementById("td5").style.backgroundColor="red";
+
+		}
+		if (e==o) {
+			document.getElementById("td7").style.backgroundColor="green";
+		}
+		else{
+			document.getElementById("td7").style.backgroundColor="red";
+
+		}
+		if (f==p) {
+			document.getElementById("td9").style.backgroundColor="green";
+		}
+		else{
+			document.getElementById("td9").style.backgroundColor="red";
+
+		}
+		if (g==q) {
+			document.getElementById("td11").style.backgroundColor="green";
+		}
+		else{
+			document.getElementById("td11").style.backgroundColor="red";
+
+		}
+		if (h==r) {
+			document.getElementById("td13").style.backgroundColor="green";
+		}
+		else{
+			document.getElementById("td13").style.backgroundColor="red";
+
+		}
+		if (i==s) {
+			document.getElementById("td15").style.backgroundColor="green";
+		}
+		else{
+			document.getElementById("td15").style.backgroundColor="red";
+
+		}
+		if (j==t) {
+			document.getElementById("td17").style.backgroundColor="green";
+		}
+		else{
+			document.getElementById("td17").style.backgroundColor="red";
+
+		}
+		if (k==u) {
+			document.getElementById("td19").style.backgroundColor="green";
+		}
+		else{
+			document.getElementById("td19").style.backgroundColor="red";
+
+		}
+
+			document.getElementById('rr').innerHTML+=" "+a;
+			
+		if (a>=5) {
+			document.getElementById('rr').style.color+="green";
+			document.getElementById('res2').innerHTML+="You Passed";
+			document.getElementById('res2').style.color+="green";
+			document.getElementById('res2').style.fontSize+="40px";
+			document.getElementById('res2').style.fontWeight+="bold";
+		}
+		else{
+			document.getElementById('rr').style.color+="red";
+			document.getElementById('res2').innerHTML+="You Failed";
+			document.getElementById('res2').style.color+="red";
+			document.getElementById('res2').style.fontSize+="40px";
+			document.getElementById('res2').style.fontWeight+="bold";
+		}
+		localStorage.clear();
+	</script>
+</body>
+</html>

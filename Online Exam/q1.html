@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/custom.css">
+	<link rel="stylesheet" type="text/css" href="Bootstrap4/bootstrap-4.3.1-dist/css/bootstrap.css">
+</head>
+<body>
+	<h1 class="text-primary mt-5 hh">Question 1</h1>
+<div class="container c1">
+<div class="div1">
+	<p class="p1 font-weight-bold mb-4 pl-3"> A much better approach to establish the base URL is to use ?</p>
+</div>
+
+<div class="container">
+	<form name="frm" onsubmit="return sbmt()">
+	<div class="container">
+		<div class="div90">
+			A : &nbsp;&nbsp;<input type="radio" name="question1" value="base">&nbsp;&nbsp;BASE element<br>
+		</div>
+		<div class="div90">
+		B : &nbsp;&nbsp;<input type="radio" name="question1" value="head">&nbsp;&nbsp;HEAD element<br></div>
+		<div class="div90">
+		C : &nbsp;&nbsp;<input type="radio" name="question1" value="both">&nbsp;&nbsp;both (a) and (b)<br></div>
+		<div class="div90">
+		D : &nbsp;&nbsp;<input type="radio" name="question1" value="none">&nbsp;&nbsp;none of these<br></div>
+	</div>
+	<input type="submit" value="Next ->" class="next1" onmouseover ="return css1()" onmouseout="css2()" id="sub1">
+	</form>
+</div>
+<script type="text/javascript">
+	function css1(){
+		document.getElementById('sub1').style.backgroundColor="		#DCDCDC";
+		document.getElementById('sub1').style.boxShadow = "2px 2px 0px black";
+	}
+	function css2(){
+		document.getElementById('sub1').style.backgroundColor="#f5f6f9";
+		document.getElementById('sub1').style.boxShadow = "none";
+	}
+	function sbmt(){
+		var form=document.frm;
+		localStorage.setItem("q1","base");
+		var Q1=form.elements["question1"].value;
+		localStorage.setItem("answer1",Q1);
+		var score=0;
+		if (Q1=="base") {
+			score++;
+		}
+		localStorage.setItem("result1",score);
+		window.location.href="q2.html";
+		return false;
+	}
+</script>
+
+</body>
+</html>
